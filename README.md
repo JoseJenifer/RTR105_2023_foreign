@@ -9,7 +9,8 @@ history
  pwd -L  
  uname  
 uname --all  
- history  
+ history
+ ### Second lesson
 Ctrl + Alt + T   - new terminal window
 Ctrl + Shift + T - new terminal in window
 Ctrl + L         - "clear" screen

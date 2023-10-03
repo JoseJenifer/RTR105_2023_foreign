@@ -1,0 +1,18 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105
+    5  cd RTR105_2023
+    6  cd RTR105_2023_foreign
+    7  mkdir Class_07
+    8  cd Class_07
+    9  pwd
+   10  nano printf_example.c
+   11  ls -lt
+   12  gcc printf_example.c
+   13  ls -lt
+   14  ./a.out
+   15  nano printf_example.c
+   16  nano gitupload
+   17  history
+   18  history > history_20231003_Class_07.txt

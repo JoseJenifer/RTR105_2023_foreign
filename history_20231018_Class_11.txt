@@ -1,0 +1,34 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105_2023_foreign
+    5  mkdir Class_11
+    6  cd Class_11
+    7  nano while_char.c
+    8  gcc while_char.c
+    9  ls -lt
+   10  ./a.out
+   11  nano while_char.c
+   12  cp while_char.c while_rand.c
+   13  nano while_char.c
+   14  nano while_rand.c
+   15  gcc while_rand.c
+   16  ./a.out
+   17  nano function_V1.c
+   18  gcc function_V1.c
+   19  ./a.out
+   20  ls -lt
+   21  man chmod
+   22  nano ex_1.c
+   23  gcc ex_1.c
+   24  ./a.out
+   25  ls -lt
+   26  gcc ex_1.c
+   27  ls -lt
+   28  ./a.out
+   29  nano function_V1.c
+   30  gcc ex_1.c
+   31  nano ex_1.c
+   32  pwd
+   33  ls -lt
+   34  history > history_20231018_Class_11.txt

@@ -1,0 +1,56 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105_2023_foreign
+    5  mkdir Class_13
+    6  cd Class_13
+    7  nano fopen.c
+    8  gcc fopen.c
+    9  ls -lt
+   10  ./a.out
+   11  ls -lt
+   12  cat myfile
+   13  cat myfile.txt
+   14  hexdump -C myfile.txt
+   15  nano fclose.c
+   16  gcc fclose.c
+   17  ls -lt
+   18  ./a.out
+   19  ls -lt
+   20  cat myfile.txt
+   21  hexdump -C myfile.txt
+   22  nano fprintf.c
+   23  gcc fprintf.c
+   24  nano fprintf.c
+   25  gcc fprintf.c
+   26  nano fprintf.c
+   27  gcc fprintf.c
+   28  nano fprintf.c
+   29  gcc fprintf.c
+   30  nano fscanf.c
+   31  gcc fscanf.c
+   32  ls -lt
+   33  ./a.out
+   34  ls -lt
+   35  cat myfile.txt
+   36  hexdump -C myfile.txt
+   37  nano fwrite.c
+   38  gcc fwrite.c
+   39  ls -lt
+   40  ./a.out
+   41  ls -lt
+   42  cat myfile.bin
+   43  hexdump -c myfile.bin
+   44  nano fread.c
+   45  gcc fread.c
+   46  ls -lt
+   47  ./a.out
+   48  ls -lt
+   49  ./a.out
+   50  ls -lt
+   51  cat fread.c
+   52  hexdump -C fread.c
+   53  nano fprintf.c
+   54  history
+   55  history > history 20231031.txt
+   56  history > history_20231031.txt

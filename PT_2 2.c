@@ -9,6 +9,12 @@ int main()
     printf("Enter a non negative natural number: \n ");
     scanf("%hhd", &decnum);
 
+    if (decnum < 0)
+    {
+      printf("The entered number is not a non negative natural number. Please enter a non nengative natural number: \n");
+    }
+    else
+    {
     printf("The binary representation of %hhd is: ", decnum);
 
 
@@ -22,6 +28,7 @@ int main()
 
    printf("\n");
 
+    }
 
 return 0;
 

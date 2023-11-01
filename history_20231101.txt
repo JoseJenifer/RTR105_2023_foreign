@@ -1,0 +1,6 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  start gnuplot
+    4  gnuplot
+    5  history
+    6  history > history_20231101.txt

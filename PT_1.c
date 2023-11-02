@@ -6,6 +6,8 @@ int main()
   int n1, n2;
   long long product;
 
+  printf("\n");
+
  printf("Enter the first number - ");
  scanf("%d", &n1);
 
@@ -17,7 +19,8 @@ int main()
 
  printf("The product of %d and %d is %lld\n", n1, n2, product);
 
-
+printf("\n");
+  
 return 0;
 
 }

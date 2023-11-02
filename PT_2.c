@@ -6,6 +6,8 @@ int main()
 
  char decnum;
 
+ printf("\n");
+
     printf("Enter a non negative natural number: \n ");
     scanf("%hhd", &decnum);
 
@@ -29,7 +31,8 @@ int main()
    printf("\n");
 
     }
-
+printf("\n");
+ 
 return 0;
 
 }

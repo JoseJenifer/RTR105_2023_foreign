@@ -1,39 +1,23 @@
-#include <stdio.h>
-
-int main()
-
-{
-
- char decnum;
-
+#include<stdio.h>
+#include<stdint.h> 
+#include<math.h>
+int main()       
+{  
+ char num; 
  printf("\n");
-
-    printf("Enter a non negative natural number: \n ");
-    scanf("%hhd", &decnum);
-
-    if (decnum < 0)
-    {
-      printf("The entered number is not a non negative natural number. Please enter a non nengative natural number: \n");
-    }
-    else
-    {
-    printf("The binary representation of %hhd is: ", decnum);
-
-
-          int bits = 8;
-     for (int i = bits - 1; i >= 0; i--)
-       {
-         char bit = (decnum >> i) & 1;
-         printf("%hhd", bit);
-       }
-
-
-   printf("\n");
-
-    }
-printf("\n");
  
-return 0;
-
+ printf("Enter a natural number: ");        
+ scanf("%hhd", &num);  
+ printf("Number: 0x%X\n", num);   
+ printf("%hhd", ((num & 0x80) >> 7));  
+ printf("%hhd", ((num & 0x40) >> 6)); 
+ printf("%hhd", ((num & 0x20) >> 5));
+ printf("%hhd", ((num & 0x10) >> 4));
+ printf("%hhd", ((num & 0x08) >> 3)); 
+ printf("%hhd", ((num & 0x04) >> 2));
+ printf("%hhd", ((num & 0x02) >> 1));  
+ printf("%hhd", ((num & 0x01) >> 0));
+ 
+ printf("\n");   
+ return 0;     
 }
-

@@ -1,0 +1,16 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105_2023_foreign
+    5  mkdir Class_17
+    6  cd Class_17
+    7  nano lw2p.c
+    8  gcc lw2p.c
+    9  nano lw2p.c
+   10  gcc lw2p.c
+   11  nano lw2p.c
+   12  gcc lw2p.c -lm
+   13  ls -lt
+   14  ./a.out
+   15  history
+   16  history > history_20231115.txt

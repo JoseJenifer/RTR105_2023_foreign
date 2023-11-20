@@ -1,0 +1,4 @@
+int generateRandomNumber()
+{
+return rand();
+}

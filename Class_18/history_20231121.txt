@@ -1,0 +1,16 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105_2023_foreign
+    5  mkdir Class_17
+    6  cd Class_17
+    7  mkdir Class_18
+    8  cd Class_18
+    9  ..
+   10  cd ..
+   11  cd..
+   12  cd ...
+   13  mv clang-format
+   14  mv clang-format bin
+   15  history
+   16  history > history_20231121.txt

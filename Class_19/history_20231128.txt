@@ -1,0 +1,26 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/JoseJenifer/RTR105_2023_foreign
+    4  cd RTR105_foreign_2023
+    5  cd RTR105_2023_foreign
+    6  mkdir Clas_19
+    7  mkdir Class_19
+    8  cd Class_19
+    9  nano derivative.c
+   10  gcc derivative.c -lm
+   11  ls -lt
+   12  gcc derivative.c -o derivative.out-lm
+   13  gcc derivative.c -o derivative.out -lm
+   14  ls -lt
+   15  ./derivative.out
+   16  ls -lt
+   17  cat derivative.dat
+   18  nano derivative.gp
+   19  ls -lt
+   20  chmod 744 derivative.gp
+   21  ls -lt
+   22  ./derivative.gp
+   23  ls -lt
+   24  nano derivative.c
+   25  history
+   26  history > history_20231128.txt

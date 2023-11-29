@@ -22,11 +22,11 @@ b=c;
 c=temp;
 }
 
-if(c>a)
+if(a>b)
 {
-temp=c;
-c=a;
-c=temp;
+temp=a;
+a=b;
+b=temp;
 }
 
 
@@ -48,11 +48,11 @@ b=c;
 c=temp;
 }
 
-if(c<a)
+if(a<b)
 {
-temp=c;
-c=a;
-a=temp;
+temp=a;
+a=b;
+b=temp;
 }
 
 
@@ -60,7 +60,7 @@ a=temp;
 
 else
 {
-printf("Invalid output order. Please type 1 for ascending order and 2 for descending order");
+printf("Invalid output order. Please type 1 for ascending order and 2 for descending order. \n");
 return ;
 }
 printf(" Sorted sequence of numbers is: %d, %d, %d \n",a,b,c);
@@ -69,11 +69,11 @@ printf(" Sorted sequence of numbers is: %d, %d, %d \n",a,b,c);
 int main()
 {
 int a,b,c,order;
-printf("Enter first decimal numbers:\n");
+printf("Enter first decimal number:\n");
 scanf("%d",&a);
-printf("Enter second decimal numbers:\n");
+printf("Enter second decimal number:\n");
 scanf("%d",&b);
-printf("Enter third decimal numbers:\n");
+printf("Enter third decimal number:\n");
 scanf("%d",&c);
 
 printf("Enter the order of sequence (1 for ascending or 2 for descending):\n");

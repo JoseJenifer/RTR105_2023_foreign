@@ -1,4 +1,0 @@
-int generateRandomNumber()
-{
-return rand();
-}

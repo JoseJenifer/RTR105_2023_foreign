@@ -1,38 +1,59 @@
 #include<stdio.h>
+
 int main()
 {
-double num;
-printf("Enter decimal number:\n");
-scanf("%lf",&num);
+    int n,i;
+    long long int factorial;
+    int dt=(1,2,3);
+    factorial=i=1;
+    printf("Enter a Number to Find Factorial: ");
+    scanf("%d",&n);
+     printf("Data types you can use \n[For char-> Press(1)]\n [For int-> ress(2)]\n [For long long int-> Press(3)]\n ");
+    printf("Enter data type need to use = ");
+    scanf("%i",&dt);
+    for(i=1;i<=n;i++)
+    {
+        factorial*=i;
+        
+    }
+    if (factorial<127)
+    while (dt=1)
+    {
+    printf("The Factorial of %d is : %lld \n",n,factorial);
+    return 0;
+    }
+   if (factorial>127)
+   while (dt==1)
+    {
 
-char datatype;
-printf("Enter a data type (c for char, i for int, l for lon long):\n");
-scanf("%c", &datatype);
 
-long long factorial =1;
-if (datatype=='l'||datatype=='i'&& num<0)
+        printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
+            return 0;
+    }
+    if (factorial<2147483647)
+    while(dt=2)
+
+    {
+        printf("The Factorial of %d is : %lld \n",n,factorial);
+    return 0;
+    }
+    if (factorial>2147483647)
+    while(dt==2)
+     {
+ printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
+            return 0;
+    }
+
+    if (factorial<9223372036854775807)
+    while(dt==3)
+    {
+        printf("The Factorial of %d is : %lld \n",n,factorial);
+    return 0;
+    }
+     if (factorial<9223372036854775807)
+    while(dt==3)
 {
-printf("The calculation is not possible for negative numbers for slected datatypes: \n");
-return 1;
-}
-for(long long i=2;i<=num;++i)
-{
-if(datatype=='i'&& factorial>2147483647/num)
-{printf("Calculation is not possible for given datatype \n");
-return 1;}
-
-if(datatype=='l'&&factorial>9223372036854775807/num)
-{printf("calculation is not possilble for the given datatype \n");
-return 1;}
-
-if(datatype=='c'&&factorial>255/num) 
-{printf("Calculation is not possible for the given datatype \n");
-return 1;}
-
-
-factorial *= i;
-
-}
-printf("factorial %lld: \n", factorial);
-return 0;
+ printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
+            return 0;
+    }
 }

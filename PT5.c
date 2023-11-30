@@ -8,8 +8,8 @@ int main()
     factorial=i=1;
     printf("Enter a Number to Find Factorial: ");
     scanf("%d",&n);
-     printf("Data types you can use \n[For char-> Press(1)]\n [For int-> ress(2)]\n [For long long int-> Press(3)]\n ");
-    printf("Enter data type need to use = ");
+     printf("Data types you can use \n[For char enter(1)]\n [For int enter(2)]\n [For long long int enter(3)]\n ");
+    printf("Enter data type need to use : \n ");
     scanf("%i",&dt);
     for(i=1;i<=n;i++)
     {

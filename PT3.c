@@ -39,7 +39,7 @@ void sortNumbers(int a, int b, int c, int order)
 
     if(b<=c)
     {
-      b=temp;
+      temp=b;
       b=c;
       c=temp;
     }

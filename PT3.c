@@ -1,28 +1,27 @@
 #include<stdio.h>
 void sortNumbers(int a, int b, int c, int order)
 {
- int temp;
   if (order==1)
   {
     if (a>=b)
     {
-      temp=a;
-      a=b;
-      b=temp;
+      a=a^b;
+      b=a^b;
+      a=a^b;
     }
 
     if(b>=c)
     {
-      temp=b;
-      b=c;
-      c=temp;
+      b=b^c;
+      c=b^c;
+      b=b^c;
     }
 
     if(a>=b)
     {
-      temp=a;
-      a=b;
-      b=temp;
+      a=a^b;
+      b=a^b;
+      a=a^b;
     }
 
 
@@ -32,23 +31,23 @@ void sortNumbers(int a, int b, int c, int order)
   {
     if(a<=b)
     {
-      temp=a;
-      a=b;
-      b=temp;
+      a=a^b;
+      b=a^b;
+      a=a^b;
     }
 
     if(b<=c)
     {
-      temp=b;
-      b=c;
-      c=temp;
+      b=b^c;
+      c=b^c;
+      b=b^c;
     }
 
     if(a<=b)
     {
-      temp=a;
-      a=b;
-      b=temp;
+      a=a^b;
+      b=a^b;
+      a=a^b;
     }
 
 

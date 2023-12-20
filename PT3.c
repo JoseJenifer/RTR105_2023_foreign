@@ -1,65 +1,43 @@
 #include<stdio.h>
 void sortNumbers(int a, int b, int c, int order)
 {
-  if (order==1)
-  {
-    if (a>=b)
+   if (a>=b)
+   {
+    a=a^b;
+    b=a^b;
+    a=a^b;
+   }
+
+   if(b>=c)
+   {
+    b=b^c;
+    c=b^c;
+    b=b^c;
+   }
+
+   if(a>=b)
+   {
+    a=a^b;
+    b=a^b;
+    a=a^b;
+   }
+     
+    if(order==1)
     {
-      a=a^b;
-      b=a^b;
-      a=a^b;
+      printf("Sorted sequence of numbers is: %d,%d,%d.\n",a,b,c);
     }
 
-    if(b>=c)
+    else if(order==2)
     {
-      b=b^c;
-      c=b^c;
-      b=b^c;
+      printf("Sorted sequence of numbers is: %d,%d,%d.\n",c,b,a);
     }
-
-    if(a>=b)
-    {
-      a=a^b;
-      b=a^b;
-      a=a^b;
-    }
-
-
-}
-
-  else if(order==2)
-  {
-    if(a<=b)
-    {
-      a=a^b;
-      b=a^b;
-      a=a^b;
-    }
-
-    if(b<=c)
-    {
-      b=b^c;
-      c=b^c;
-      b=b^c;
-    }
-
-    if(a<=b)
-    {
-      a=a^b;
-      b=a^b;
-      a=a^b;
-    }
-
-
-}
 
     else
     {
        printf("Invalid output order. Please type 1 for ascending order and 2 for descending order. \n");
        return ;
     }
-       printf(" Sorted sequence of numbers is: %d, %d, %d \n",a,b,c);
-}    
+}       
 
 int main()
 {

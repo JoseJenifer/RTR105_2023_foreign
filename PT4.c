@@ -1,58 +1,69 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
-    long long int factorial;
-    int dt=(1,2,3);
-    factorial=i=1;
-    printf("Enter a Number to Find Factorial: ");
-    scanf("%d",&n);
-     printf("Data types you can use \n[For char enter (1)]\n [For int enter (2)]\n [For long long int enter Press(3)]\n ");
-    printf("Enter data type need to use: \n");
-    scanf("%i",&dt);
+   unsigned  int n,i;
+   unsigned long long int factorial;
+   unsigned long long int dt=(1,2,3);
+   factorial=i=1;
+    
+   printf("Enter a Number to Find Factorial: ");
+   scanf("%u",&n);
+    
+   printf("Enter data type need to use( 1 for char, 2 for int, 3 for long long) :  \n");
+   scanf("%llu",&dt);
+    
     while(i<=n)
     {
         factorial*=i;
         i++;
     }
-    if (factorial<127)
-    while (dt=1)
+    if(dt==1)
     {
-    printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
+      if (factorial<=127)
+      {
+        printf("The Factorial of %u is : %llu \n",n,factorial);
+      }
+      else   if (factorial>127)
+      {
+        printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n"); 
+      }
     }
-   if (factorial>127)
-   while (dt==1)
+    if(dt==2)
     {
-
-
-        printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
-    }
     if (factorial<2147483647)
-    while(dt=2)
+
 
     {
-        printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
+        printf("The Factorial of %u is : %llu \n",n,factorial);
+
     }
-    if (factorial>2147483647)
-    while(dt==2)
+  else  if (factorial>2147483647)
      {
  printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
-    }
 
-    if (factorial<9223372036854775807)
-    while(dt==3)
-    {
-        printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
     }
-     if (factorial<9223372036854775807)
-    while(dt==3)
+}
+if(dt==3)
+{
+    if (factorial<9223372036854775807)
+
+    {
+        printf("The Factorial of %u is : %llu \n",n,factorial);
+
+    }
+else  if (factorial<9223372036854775807)
+
 {
  printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
     }
+}
+else if((dt!=1)&&(dt!=2)&&(dt!=3))
+{
+printf("please enter a valid input. \n");
+}
+
+printf("\n");
+
+
+return 0;
 }

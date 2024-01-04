@@ -22,7 +22,7 @@ int main()
     temp=result*i;
     if(temp/i!=result)
     {
-      printf("error overflow for given datatype.\n");
+      printf("Error.Overflow for given datatype.\n");
       return 0;
     }
     
@@ -30,6 +30,6 @@ int main()
    i++;
   }
   
-  printf("factorial of %d with datatype %c: %lld\n",num, datatype, result);
+  printf("Factorial of %d with datatype : %lld \n",num, result);
   return 0;
 }

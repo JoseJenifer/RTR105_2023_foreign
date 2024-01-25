@@ -1,5 +1,5 @@
 #include<stdio.h>
 void printMessage()
 {
-printf("Hello! this is function without arguments and without return.\n");
+printf("The best way to predict future is to invent it.\n");
 }

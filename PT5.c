@@ -1,59 +1,87 @@
 #include<stdio.h>
-
-int main()
+void main()
 {
-    int n,i;
-    long long int factorial;
-    int dt=(1,2,3);
-    factorial=i=1;
-    printf("Enter a Number to Find Factorial: ");
-    scanf("%d",&n);
-     printf("Data types you can use \n[For char enter(1)]\n [For int enter(2)]\n [For long long int enter(3)]\n ");
-    printf("Enter data type need to use : \n ");
-    scanf("%i",&dt);
-    for(i=1;i<=n;i++)
-    {
-        factorial*=i;
-        
-    }
-    if (factorial<127)
-    while (dt=1)
-    {
-    printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
-    }
-   if (factorial>127)
-   while (dt==1)
-    {
+  long long num;
+  char x = 1;
+  int y = 1;
+  long long z = 1;
+  char datatype;
 
+  printf("Enter a decimal number:");
+  scanf("%d", &num);
+  
+  while(getchar() != '\n');
+  
+  printf("Enter a datatype(1 for char,2 for int or 3 for long long):\n");
+  scanf("%c",&datatype);
 
-        printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
-    }
-    if (factorial<2147483647)
-    while(dt=2)
-
+  
+  if(datatype == '1')
+  {
+    char factorial = 1;
+    int a = 1;
+    
+    for(a=1;a<num;a++)
     {
-        printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
+       x *= (a+1);
+       factorial *= a;
+      
     }
-    if (factorial>2147483647)
-    while(dt==2)
-     {
- printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
-    }
-
-    if (factorial<9223372036854775807)
-    while(dt==3)
+    
+    if(x != factorial*num)
     {
-        printf("The Factorial of %d is : %lld \n",n,factorial);
-    return 0;
+       printf("Error. Overflow detected.\n");
     }
-     if (factorial<9223372036854775807)
-    while(dt==3)
-{
- printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-            return 0;
+    
+    else if( x == factorial*num)
+    {
+       printf("Factorial of the given number is: %d. \n",x);
     }
-}
+  }
+  
+  if(datatype == '2')
+  {
+    int factorial = 1;
+    int a = 1;
+    
+    for(a=1;a<num;a++)
+    {
+      y *= (a+1);
+      factorial *= a;
+      
+    }
+    
+    if(y != factorial*num)
+    {
+       printf("Error. Overflow Detected. \n");
+    }
+    
+    else if(y == factorial*num)
+    {
+       printf("Factorial of the given number is: %d. \n",y);    
+    {
+  }
+  
+  if(datatype == '3')
+  {
+    long long factorial = 1;
+    long long a = 1;
+    
+    for(a=1;a < num;a++)
+    {
+      z *= (a+1);
+      factorial *= a;
+      
+    }
+    
+    if(z != factorial*num)
+    {
+      printf("Error.Overflow detected. \n");
+    }
+    
+    else if(z == factorial*num)
+    {
+      printf("Factorial of the given number is: %d. \n", z);
+    }
+  }   
+}    
